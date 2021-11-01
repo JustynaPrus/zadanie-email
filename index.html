@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Email</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
+    <style type="text/css">
         * {
             margin: 0;
             padding: 0;
@@ -30,6 +30,7 @@
             width: 100%;
             table-layout: fixed;
             padding-bottom: 60px;
+
         }
 
         table {
@@ -49,37 +50,9 @@
             font-size: 20px;
         }
 
-        .three-columns {
-            padding: 20px 0 10px;
-            width: 100%;
-            text-align: center;
-            font-size: 0;
-        }
-
         .column {
-            width: 100%;
-            max-width: 200px;
-            display: inline-block;
-            vertical-align: middle;
+            width: 200px;
             text-align: center;
-        }
-
-        .center {
-            padding: 0 42px;
-        }
-
-        .left {
-            padding: 0 64px;
-        }
-
-        .right {
-            padding: 0 53px;
-        }
-
-        .content {
-            text-align: center;
-            font-size: 14px;
-            padding: 10px 0;
         }
     </style>
 </head>
@@ -118,61 +91,17 @@
                 <td>
                     <table>
                         <tr>
-                            <td class="three-columns">
-                                <table class="column">
-                                    <tr>
-                                        <td class="left">
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <img src="images/phone_black_24dp.svg" alt="phone">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>111111111</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column">
-                                    <tr>
-                                        <td class="center">
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <img src="images/email_black_24dp.svg" alt="email">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>email@email.com</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column">
-                                    <tr>
-                                        <td class="right">
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <img src="images/chat_black_24dp.svg" alt="chat">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>test@test.com</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <td class="column">
+                                <img src="images/phone_black_24dp.svg" alt="phone">
+                                <p>111111111</p>
+                            </td>
+                            <td class="column">
+                                <img src="images/email_black_24dp.svg" alt="email">
+                                <p>email@email.com</p>
+                            </td>
+                            <td class="column">
+                                <img src="images/chat_black_24dp.svg" alt="chat">
+                                <p>test@test.com</p>
                             </td>
                         </tr>
                     </table>
